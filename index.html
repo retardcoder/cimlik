@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönlendiriyorsunuz</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #redirectBox {
+            padding: 20px;
+            background-color: #0f9d58;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #loadingGif {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="redirectBox">
+        <p>Yönlendiriyorsunuz...</p>
+        <img id="loadingGif" src="https://assets-v2.lottiefiles.com/a/cdb69514-1153-11ee-a67c-07faa2d57586/DXMuBOuTdL.gif" alt="Yükleniyor...">
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "olusturucu.html";
+        }, 3000); // 3000 milisaniye (3 saniye) sonra yönlendirme yapacak
+    </script>
+</body>
+</html>
